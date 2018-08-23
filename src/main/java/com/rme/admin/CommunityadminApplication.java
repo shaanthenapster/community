@@ -23,6 +23,7 @@ public class CommunityadminApplication extends SpringBootServletInitializer{
 	public static void main(String[] args) {
 		SpringApplication.run(CommunityadminApplication.class, args);
 	}
+	
 	@Bean
 	public SessionFactory sessionFactory(HibernateEntityManagerFactory e) {
 		return e.getSessionFactory();		
